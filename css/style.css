@@ -1140,14 +1140,14 @@ h6 {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  top: calc(50% + 3.2px);
+  top: calc(50% + 3.5px);
 }
 
 .card__title span::after {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  top: calc(50% - 3.2px);
+  top: calc(50% - 3.5px);
 }
 
 .card__pic:hover .card__title {
@@ -1431,7 +1431,6 @@ h6 {
 }
 
 .plate__text {
-  font-weight: 500;
   line-height: 1.2;
   color: #57423F;
 }
