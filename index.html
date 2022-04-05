@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220324171339">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220405162823">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,37 +15,35 @@
 <body>
 	<div class="wrapper">
 		<header class="header" data-scroll-show>
-			<div class="header__container">
-				<div class="header__body">
-					<div data-goto-speed="1500" data-goto-header data-goto=".intro-screen" class="header__logo">
-						<div class="header__emblem -ibg">
+			<div class="header__body">
+				<div data-goto-speed="1500" data-goto-header data-goto=".intro-screen" class="header__logo">
+					<div class="header__emblem -ibg">
+						<picture><source srcset="img/logo3.webp" type="image/webp"><img src="img/logo3.png" alt="emblem"></picture>
+					</div>
+				</div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div data-goto-speed="1500" data-goto-header data-goto=".intro-screen" class="menu__emblem -ibg">
 							<picture><source srcset="img/logo3.webp" type="image/webp"><img src="img/logo3.png" alt="emblem"></picture>
 						</div>
-					</div>
-					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
-						<nav class="menu__body">
-							<div data-goto-speed="1500" data-goto-header data-goto=".intro-screen" class="menu__emblem -ibg">
-								<picture><source srcset="img/logo3.webp" type="image/webp"><img src="img/logo3.png" alt="emblem"></picture>
-							</div>
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a href="#" data-goto-speed="1500" data-goto-header data-goto=".history-title" class="menu__link"><span>Історія</span></a>
-								</li>
-								<li class="menu__item">
-									<a href="#" data-goto-speed="1500" data-goto-header data-goto=".about-title" class="menu__link"><span>Про нас</span></a>
-								</li>
-								<li class="menu__item">
-									<a href="#" data-goto-speed="1500" data-goto-header data-goto=".event-title" class="menu__link"><span>Події</span></a>
-								</li>
-								<li class="menu__item">
-									<a href="#" data-goto-speed="1500" data-goto-header data-goto=".footer__contact" class="menu__link"><span>Контакти</span></a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" data-goto-speed="1500" data-goto-header data-goto=".history-title" class="menu__link"><span>Історія</span></a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-speed="1500" data-goto-header data-goto=".about-title" class="menu__link"><span>Про нас</span></a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-speed="1500" data-goto-header data-goto=".event-title" class="menu__link"><span>Події</span></a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-speed="1500" data-goto-header data-goto=".footer__contact" class="menu__link"><span>Контакти</span></a>
+							</li>
+						</ul>
+					</nav>
 				</div>
+
 			</div>
 		</header>
 
@@ -53,16 +51,14 @@
 
 
 
+		<section class="intro-screen">
+			<div class="intro-screen__pic -ibg">
+				<picture><source srcset="img/main.webp" type="image/webp"><img src="img/main.jpg" alt="main img" /></picture>
+			</div>
+			<h1 class="intro-screen__title">орден вежі святого миколая</h1>
+		</section>
 		<main class="page">
-			<section class="intro-screen">
-				<div class="intro-screen__container">
-					<div class="intro-screen__pic -ibg">
-						<picture><source srcset="img/main.webp" type="image/webp"><img src="img/main.jpg" alt="main img" /></picture>
-					</div>
-					<h1 class="intro-screen__title">орден вежі святого миколая</h1>
-				</div>
-			</section>
-			<section class="history-screen" id="sec1">
+			<section class="history-screen">
 				<div class="history-screen__container">
 					<h2 class="title history-title">Наша <span>Історія</span></h2>
 					<div class="history-screen__wrapper">
@@ -307,45 +303,45 @@
 					</div>
 				</div>
 			</section>
-			<footer class="footer" id="sec5">
-				<div class="footer__container">
-					<div class="footer__map">
-						<div class="feature map">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5289.026855276482!2d22.84788118632887!3d48.485045985423106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ae5bd5a06855%3A0xb651e306ebc4b04c!2z0JrRgNC10L_QvtGB0YLRjCAi0KHQtdC90YIt0JzQuNC60LvQvtGIIiAo0KfQuNC90LDQtNC40LXQstC-KQ!5e0!3m2!1sru!2sua!4v1641396217864!5m2!1sru!2sua"></iframe>
-						</div>
-						<div class="footer__contact contact">
-							<h6 class="contact__title">Орден Вежі Святого Миколая</h6>
-							<div class="contact__adress">
-								вул Волошина, 53Б, Чинадійово, <br>Закарпатська обл, 89640
+		</main>
+		<footer class="footer" id="sec5">
+			<!--	<div class="footer__container">-->
+			<div class="footer__map">
+				<div class="feature map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5289.026855276482!2d22.84788118632887!3d48.485045985423106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ae5bd5a06855%3A0xb651e306ebc4b04c!2z0JrRgNC10L_QvtGB0YLRjCAi0KHQtdC90YIt0JzQuNC60LvQvtGIIiAo0KfQuNC90LDQtNC40LXQstC-KQ!5e0!3m2!1sru!2sua!4v1641396217864!5m2!1sru!2sua"></iframe>
+				</div>
+				<div class="footer__contact contact">
+					<h6 class="contact__title">Орден Вежі Святого Миколая</h6>
+					<div class="contact__adress">
+						вул Волошина, 53Б, Чинадійово, <br>Закарпатська обл, 89640
 
-								<div class="contact__row">
-									<div class="contact__column">
-										<a href="tel:+380995215084" class="contact__contact">
-											<picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt=""></picture>
-											<div>38 (099) 521 50 84</div>
-										</a>
-										<a href="mailto:sentmiklosch@gmail.com" class="contact__contact">
-											<picture><source srcset="img/icons/mail.webp" type="image/webp"><img src="img/icons/mail.png" alt=""></picture>
-											<div>sentmiklosch@gmail.com</div>
-										</a>
-									</div>
-									<div class="contact__column">
-										<div class="contact__social">
-											<a href="https://www.instagram.com/zak.knights/" class="-ibg" target="_blank">
-												<picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt=""></picture>
-											</a>
-											<a href="#n" class="-ibg">
-												<picture><source srcset="img/icons/facebook.webp" type="image/webp"><img src="img/icons/facebook.png" alt=""></picture>
-											</a>
-										</div>
-										<div class="contact__alrr">© 2002 - 2021 All rights reserved</div>
-									</div>
+						<div class="contact__row">
+							<div class="contact__column">
+								<a href="tel:+380995215084" class="contact__contact">
+									<picture><source srcset="img/icons/phone.webp" type="image/webp"><img src="img/icons/phone.png" alt=""></picture>
+									<div>38 (099) 521 50 84</div>
+								</a>
+								<a href="mailto:sentmiklosch@gmail.com" class="contact__contact">
+									<picture><source srcset="img/icons/mail.webp" type="image/webp"><img src="img/icons/mail.png" alt=""></picture>
+									<div>sentmiklosch@gmail.com</div>
+								</a>
+							</div>
+							<div class="contact__column">
+								<div class="contact__social">
+									<a href="https://www.instagram.com/zak.knights/" class="-ibg" target="_blank">
+										<picture><source srcset="img/icons/instagram.webp" type="image/webp"><img src="img/icons/instagram.png" alt=""></picture>
+									</a>
+									<a href="#n" class="-ibg">
+										<picture><source srcset="img/icons/facebook.webp" type="image/webp"><img src="img/icons/facebook.png" alt=""></picture>
+									</a>
 								</div>
+								<div class="contact__alrr">© 2002 - 2021 All rights reserved</div>
 							</div>
 						</div>
 					</div>
-			</footer>
-		</main>
+				</div>
+				<!--	</div>-->
+		</footer>
 	</div>
 	<div id='preloader'>
 		<div class="preloader__image -ibg">
@@ -439,7 +435,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220324171339"></script>
+	<script src="js/app.min.js?_v=20220405162823"></script>
 </body>
 
 </html>
