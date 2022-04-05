@@ -6,8 +6,6 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 header {
@@ -380,8 +378,7 @@ body::after {
   margin: 3em auto 0px auto;
 }
 
-.tabs__body .tabs__body {
-  width: 85%;
+.tabs__body {
   margin: 0px auto;
 }
 
@@ -847,15 +844,15 @@ h1 {
   color: #FFFFFF;
 }
 
-@supports (font-size: clamp( 1.5rem , 1.2rem  +  1.5vw , 3rem )) {
+@supports (font-size: clamp( 1.5rem , 1.025rem  +  2.375vw , 3.875rem )) {
   h1 {
-    font-size: clamp( 1.5rem , 1.2rem  +  1.5vw , 3rem );
+    font-size: clamp( 1.5rem , 1.025rem  +  2.375vw , 3.875rem );
   }
 }
 
-@supports not (font-size: clamp( 1.5rem , 1.2rem  +  1.5vw , 3rem )) {
+@supports not (font-size: clamp( 1.5rem , 1.025rem  +  2.375vw , 3.875rem )) {
   h1 {
-    font-size: calc(1.5rem + 1.5 * (100vw - 20rem) / 100);
+    font-size: calc(1.5rem + 2.375 * (100vw - 20rem) / 100);
   }
 }
 
@@ -1012,6 +1009,7 @@ h6 {
 
 .intro-screen__title {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   letter-spacing: 0.1em;
@@ -1036,16 +1034,10 @@ h6 {
 
 .title span:after {
   background-color: #BC282C;
-  /* Цвет линии при наведении на нее курсора мыши */
   display: block;
   content: "";
   height: 3px;
-  /* Высота линии */
   width: 100%;
-  -webkit-transition: width 0.3s ease-in-out;
-  -moz--transition: width 0.3s ease-in-out;
-  -o-transition: width 0.3s ease-in-out;
-  transition: width 0.3s ease-in-out;
 }
 
 .history-screen__wrapper {
@@ -1173,7 +1165,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1400px;
+  max-width: 35%;
   padding: 0 15px;
 }
 
@@ -1232,7 +1224,7 @@ h6 {
 }
 
 .about-screen__tab-content {
-  max-width: 63%;
+  max-width: 61.8%;
 }
 
 .about-screen__tab-body {
@@ -1432,7 +1424,7 @@ h6 {
   }
 }
 
-@media (max-width: 63.99875em) {
+@media (max-width: 90em) {
   .contact__alrr {
     position: absolute;
     bottom: 1.5625rem;
@@ -1442,9 +1434,12 @@ h6 {
             transform: translateX(-50%);
   }
 
+  .about-screen__info {
+    max-width: 60%;
+  }
+
   .about-screen__tab-content {
-    max-width: 100%;
-    padding: 0 15px;
+    max-width: calc(100% - 30px);
   }
 }
 
@@ -1480,6 +1475,10 @@ h6 {
 
   .contact__alrr {
     bottom: 0.3125rem;
+  }
+
+  .about-screen__info {
+    max-width: 80%;
   }
 
   .about-screen__tab-body {
@@ -1727,14 +1726,7 @@ h6 {
   }
 
   .intro-screen__title {
-    -webkit-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
     line-height: 1.8;
-  }
-
-  .intro-screen__title.menu-open {
-    display: none;
   }
 
   .history-screen__wrapper {
